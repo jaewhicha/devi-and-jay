@@ -1,5 +1,8 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { Button } from "ui";
+import Link from "next/link";
 
 const API_HOST = process.env.NEXT_PUBLIC_API_HOST || "http://localhost:3001";
 
