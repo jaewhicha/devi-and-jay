@@ -34,7 +34,7 @@ COPY turbo.json turbo.json
 # ARG TURBO_TOKEN
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
-RUN yarn turbo run build --filter=api...
+RUN yarn turbo run build --filter=dnj-api...
 
 FROM node:alpine AS runner
 WORKDIR /app
@@ -45,4 +45,4 @@ RUN adduser --system --uid 1001 expressjs
 USER expressjs
 COPY --from=installer /app .
 
-CMD node apps/api/dist/index.js
+CMD node apps/dnj-api/dist/index.js

@@ -34,7 +34,7 @@ COPY turbo.json turbo.json
 # ARG TURBO_TOKEN
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
-RUN yarn turbo run build --filter=web...
+RUN yarn turbo run build --filter=dnj-web...
 
 FROM node:alpine AS runner
 WORKDIR /app
@@ -44,12 +44,12 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 USER nextjs
 
-COPY --from=installer /app/apps/web/next.config.js .
-COPY --from=installer /app/apps/web/package.json .
+COPY --from=installer /app/apps/dnj-web/next.config.js .
+COPY --from=installer /app/apps/dnj-web/package.json .
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=installer --chown=nextjs:nodejs /app/apps/web/.next/standalone ./
-COPY --from=installer --chown=nextjs:nodejs /app/apps/web/.next/static ./apps/web/.next/static
+COPY --from=installer --chown=nextjs:nodejs /app/apps/dnj-web/.next/standalone ./
+COPY --from=installer --chown=nextjs:nodejs /app/apps/dnj-web/.next/static ./apps/dnj-web/.next/static
 
-CMD node apps/web/server.js
+CMD node apps/dnj-web/server.js
