@@ -2,10 +2,10 @@
   "compilerOptions": {
     "lib": ["ES2015"],
     "module": "CommonJS",
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "outDir": "../dnj-api/dist",
+    "rootDir": "../dnj-api/src"
   },
-  "exclude": ["node_modules"],
+  "exclude": ["../dnj-api/node_modules"],
   "extends": "tsconfig/base.json",
-  "include": ["src"]
+  "include": ["../dnj-api/src"]
 }
