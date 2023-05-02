@@ -23,6 +23,7 @@ stages:          # List of stages for jobs, and their order of execution
   - deploy
 
 before_script:
+  - yarn global add turbo
   - yarn run clean
 
 build-job:       # This job runs in the build stage, which runs first.
