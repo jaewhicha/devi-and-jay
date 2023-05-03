@@ -38,11 +38,12 @@ build-job:       # This job runs in the build stage, which runs first.
 
 docker-build:
   image: docker:latest
+  services:
+    - docker:stable-dind
+    - node:latest
   stage: build
-  before_script:
-    - echo "Bypassing global scripts..."
   script: 
-    - "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build"
+    - yarn run docker-build
 
 unit-test-job:
   image: node:latest   # This job runs in the test stage.
