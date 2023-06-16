@@ -41,8 +41,7 @@ docker-build:
   stage: build
   before_script:
     - NODE_VERSION=18.16.0
-    - apt install -y curl
-    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+    - awget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     - NVM_DIR=/root/.nvm
     - $NVM_DIR/nvm.sh && nvm install ${NODE_VERSION}
     - $NVM_DIR/nvm.sh && nvm use v${NODE_VERSION}
