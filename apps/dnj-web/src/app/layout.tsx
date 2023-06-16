@@ -12,9 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body id="top">
-        <div id="page" className="s-pagewrap ss-home">
+        <div id="page" className="s-pagewrap">
           <Header />
+          <div id="content" className="s-content s-content--page">
             {children}
+          </div>
           <Footer />
         </div>
       </body>
