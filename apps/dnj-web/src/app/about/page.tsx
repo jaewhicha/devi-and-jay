@@ -1,8 +1,8 @@
-export default function Recipes() {
+export default function About() {
     return (
         <div>
-            <h1>Recipes</h1>
-            <p>This is the recipes page.</p>
+            <h1>About</h1>
+            <p>This is the about page.</p>
         </div>
     )
 }

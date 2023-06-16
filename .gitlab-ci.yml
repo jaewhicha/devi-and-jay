@@ -36,14 +36,13 @@ build-job:       # This job runs in the build stage, which runs first.
     - yarn run build
     - echo "Compile complete."
 
-# docker-build:
-#   image: docker:latest
-#   services:
-#     - docker:stable-dind
-#     - node:latest
-#   stage: build
-#   script: 
-#     - yarn run docker-build
+docker-build:
+  image: docker:latest
+  stage: build
+  before_script:
+    - 
+  script: 
+    - yarn run docker-build
 
 unit-test-job:
   image: node:latest   # This job runs in the test stage.
