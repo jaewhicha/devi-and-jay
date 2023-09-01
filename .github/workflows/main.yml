@@ -19,6 +19,7 @@ jobs:
 
     - name: yarn install, build and test
       run: |
+        yarn global add turbo
         yarn install
         turbo build
         turbo test
