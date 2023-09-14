@@ -11,5 +11,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "7",
+    "typescript": "4.2"
   }
 }
