@@ -14,7 +14,7 @@ export default function RootLayout({
       <body id="top">
         <div id="page" className="s-pagewrap">
           <Header />
-          <div id="content" className="s-content s-content--page">
+          <div id="content" className="s-content">
             {children}
           </div>
           <Footer />

@@ -36,7 +36,7 @@ export const Header = () => {
                                     <span className="u-screen-reader-text">Search for:</span>
                                     <input type="search" className="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" />
                                 </label>
-                                <input type="submit" className="s-header__search-submit" value="Search" />
+                                <input type="submit" className="s-header__search-submit" readOnly value="Search" />
                             </form>
 
                             <a href="#0" title="Close Search" className="s-header__search-close">Close</a>
