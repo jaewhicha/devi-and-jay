@@ -3,7 +3,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 
-import { userRoute } from './users/users';
+import { userRoute } from "./users/users";
 import { commentsRoute } from "./comments/comments";
 
 export const createServer = () => {
@@ -20,8 +20,8 @@ export const createServer = () => {
     .get("/healthz", (req, res) => {
       return res.json({ ok: true });
     })
-    .use('/users', userRoute)
-    .use('/comments', commentsRoute);
+    .use("/users", userRoute)
+    .use("/comments", commentsRoute);
 
   return app;
 };

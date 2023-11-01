@@ -1,5 +1,7 @@
 export const Masonry = (props) => {
-    return (
-        
-    );
-}
+  return (
+    <>
+      <pre>Add code to component.</pre>
+    </>
+  );
+};

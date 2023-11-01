@@ -1,7 +1,5 @@
-import { PageHeader } from 'ui'
+import { PageHeader } from "ui";
 
 export default function Recipes() {
-    return (
-        <PageHeader title='Recipes' />
-    )
+  return <PageHeader title="Recipes" />;
 }

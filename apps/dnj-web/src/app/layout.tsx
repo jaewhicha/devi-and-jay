@@ -1,4 +1,4 @@
-import { Header, Footer } from "ui"
+import { Header, Footer } from "ui";
 import "./styles.css";
 import "./vendor.css";
 
