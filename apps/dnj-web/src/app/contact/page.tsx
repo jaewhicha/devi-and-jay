@@ -13,9 +13,11 @@ export default function Contact() {
             <div className="entry__media">
               <figure className="featured-image">
                 <Image
-                  src="images/thumbs/contact/contact-1200.jpg"
+                  src="/images/thumbs/contact/contact-1200.jpg"
                   sizes="(max-width: 2400px) 100vw, 2400px"
                   alt=""
+                  width={100}
+                  height={100}
                 />
               </figure>
             </div>
