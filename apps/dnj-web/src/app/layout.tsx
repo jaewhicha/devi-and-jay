@@ -1,4 +1,4 @@
-import { Header, Footer } from "ui";
+import { Footer, HomeHeader } from "ui";
 import "./styles.css";
 import "./vendor.css";
 
@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <body id="top">
         <div id="page" className="s-pagewrap">
-          <Header />
+          <HomeHeader />
           <div id="content" className="s-content">
             {children}
           </div>
