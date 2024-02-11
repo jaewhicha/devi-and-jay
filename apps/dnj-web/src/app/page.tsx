@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 };
 export default function Web() {
   return (
-  <>
-    <HomeHero/>
-    <div>
-      <h1>Home</h1>
-      <p>This is the home page</p>
-    </div>
-  </>
+    <>
+      <HomeHero />
+      <div>
+        <h1>Home</h1>
+        <p>This is the home page</p>
+      </div>
+    </>
   );
 }

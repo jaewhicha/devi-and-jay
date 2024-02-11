@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -8,8 +8,8 @@ export default function Contact() {
           <article className="entry">
             <header className="entry__header entry__header--narrow">
               <h1 className="entry__title">Say Hello.</h1>
-            </header>s
-
+            </header>
+            s
             <div className="entry__media">
               <figure className="featured-image">
                 <Image
@@ -21,7 +21,6 @@ export default function Contact() {
                 />
               </figure>
             </div>
-
             <div className="content-primary">
               <div className="entry__content">
                 <p className="lead">
