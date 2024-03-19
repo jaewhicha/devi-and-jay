@@ -1,6 +1,6 @@
 export const HomeHero = () => {
   return (
-    <section id="content" className="s-content">
+    <>
       <div className="hero">
         <div className="hero__slider swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
           <div
@@ -172,6 +172,6 @@ export const HomeHero = () => {
           <span>Scroll</span>
         </a>
       </div>
-    </section>
+    </>
   );
 };

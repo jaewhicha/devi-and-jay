@@ -1,3 +1,5 @@
+// imports
+
 import { Footer, HomeHeader } from "ui";
 import "./styles.css";
 import "./vendor.css";
@@ -10,16 +12,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="js ss-loaded">
       <body id="top">
-        <div id="page" className="s-pagewrap">
+        <div id="page" className="s-pagewrap ss-home">
           <HomeHeader />
-          <div id="content" className="s-content">
+          <section id="content" className="s-content">
             {children}
-          </div>
+          </section>
           <Footer />
         </div>
       </body>
     </html>
   );
 }
+
+import "../scripts/main";
+import "../scripts/plugins";
