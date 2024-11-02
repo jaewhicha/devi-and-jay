@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "next": "latest",
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-masonry": "^2.2.1",
+    "swiper": "^11.1.5",
     "ui": "*"
   },
   "devDependencies": {

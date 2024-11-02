@@ -8,7 +8,8 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <section><h3>Page content goes here</h3></section>
     </>
   );
 }
